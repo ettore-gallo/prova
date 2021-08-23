@@ -11,7 +11,11 @@
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 # baseurl:               '/hydejack-starter-kit'
 
+favicon: /assets/icons/favicon.ico
+apple_touch_icon: /assets/icons/apple-icon-precomposed.png
 
+gems:
+  - jekyll-font-awesome-sass
 # General settings
 # ---------------------------------------------------------------------------------------
 
@@ -20,41 +24,68 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                 Ettore Gallo
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  <p>I'm Ettore, PhD candidate in Economics at the <a href="https://www.newschool.edu/nssr/economics/">New School for Social Research.</a></p>
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:              PhD Candidate in Economics – <br>
+                      The New School for Social Research <br> <br>
+
+                      Member of G20 Working Team -  <br> Italian Ministry of Economy and Finance
 
 # A list of keywords for your blog
 keywords:              []
- 
+
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/gallo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                <Ettore> <Gallo>
+  email:               <ettoregallo@newschool.edu>
+  # # Used by `jekyll-seo-tag`:
+  twitter:             <ettoregallo1>
+
+author:
+  # Used by `jekyll-feed`:
+  name:                Ettore Gallo
+  email:               ettoregallo@newschool.edu
+  social:
+    email: mailto:ettoregallo@newschool.edu
+    github: ettoreg
+    twitter: ettoregallo1
+    linkedin: ettore-gallo
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
+
+
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About
+  - title:             About me
     url:               /about/
+  - title:             CV
+    url:               /cv/
+#  - title:             CV (ENG)
+#    url:               https://drive.google.com/file/d/1IjqGQOQ5h9IqXN98E02KY6z-863Dtzbc/view?usp=sharing{:target="_blank"}
+#  - title:             CV (ITA)
+#    url:               https://drive.google.com/file/d/1E8Qs_q6ItHtLt3cBVq7vmPM44znEcBBC/view?usp=sharing
+  - title:             Publications
+    url:               /publications/
+  - title:             Teaching
+    url:               /teaching/
+  - title:             Codes
+    url:               /codes/
+  - title:             Contacts
+    url:               /contacts/
+
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -67,7 +98,7 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © Ettore Gallo . All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -86,9 +117,9 @@ theme: jekyll-theme-hydejack
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
- 
+
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/background.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -215,7 +246,7 @@ hydejack:
   # This will increase site build speed dramatically!
   no_inline_css:       false
 
-  # Set to `true` if you don't intend on changing the accent color on a per-page basis. 
+  # Set to `true` if you don't intend on changing the accent color on a per-page basis.
   # This will increase site build speed!
   no_page_style:       false
 
@@ -258,7 +289,7 @@ hydejack:
 
   # Buyers of the PRO version can opt to hide all dates from the theme.
   # Frequent consumers of online content will know that nothing devalues a post like
-  # seeing an old date. 
+  # seeing an old date.
   hide_dates:          false
 
   # TODO
@@ -349,8 +380,8 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for twitter cards
-# twitter:
-#   username:            <username>
+ #twitter:
+#   username:            <ettoregallo1>
 
 # Used for facebook open graph
 # facebook:
@@ -359,11 +390,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+ #social:
+  # name:                <firstname> <lastname>
+   #links:
+    # - https://twitter.com/<username>
+     #- https://github.com/<username>
 
 
 # Plugin Configs
@@ -399,21 +430,21 @@ jekyll_compose:
   default_front_matter:
     drafts:
       layout: post
-      description: > 
+      description: >
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
         path: /assets/img/sidebar-bg.jpg
     posts:
       layout: post
-      description: > 
+      description: >
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
         path: /assets/img/sidebar-bg.jpg
     projects:
       layout: project
-      description: > 
+      description: >
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
