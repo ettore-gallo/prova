@@ -32,7 +32,7 @@ Hydejack's cover page on a variety of screen sizes.
 
 It includes a blog that is suitable for both prose and technical documentation, a portfolio to showcase your projects, and a resume template that looks amazing on the web and in print.
 
-> Your complete presence on the web — A [blog], [portfolio], and [resume].
+> Your complete presence weqweqweeqweqweqw on the web — A [blog], [portfolio], and [resume].
 {:.lead}
 
 
